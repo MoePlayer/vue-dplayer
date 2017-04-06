@@ -1,0 +1,27 @@
+{
+  "name": "Vue-DPlayer",
+  "description": "My finest Vue app",
+  "version": "0.0.0",
+  "repository": {},
+  "main": "dist/Vue-DPlayer.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo lol",
+    "lint": "vbuild -c vbuild.example.js --eslint",
+    "build": "npm run build:cjs && npm run build:umd",
+    "build:cjs": "vbuild -c vbuild.component.js --format cjs",
+    "build:umd": "vbuild -c vbuild.component.js --format umd",
+    "example": "vbuild -c vbuild.example.js -d",
+    "deploy": "vbuild -c vbuild.example.js && gh-pages -d dist-example"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "vbuild": "^6.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dplayer": "^1.1.4"
+  }
+}
