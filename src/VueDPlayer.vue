@@ -7,24 +7,28 @@
   export default {
     props: {
       autoplay: {
-        type: Boolean
+        type: Boolean,
+        default: false
       },
       theme: {
         type: String,
         default: '#FADFA3'
       },
       loop: {
-        type: Boolean
+        type: Boolean,
+        default: true
       },
       lang: {
         type: String,
         default: 'zh'
       },
       screenshot: {
-        type: Boolean
+        type: Boolean,
+        default: false
       },
       hotkey: {
-        type: Boolean
+        type: Boolean,
+        default: true
       },
       preload: {
         type: String,
@@ -33,12 +37,6 @@
       video: {
         type: Object,
         required: true,
-        default() {
-          return {
-            url,
-            pic
-          }
-        },
         validator(value) {
           return typeof value.url === 'string'
         }
@@ -64,6 +62,30 @@
           pic: this.video.pic,
           type: 'normal'
         }
+      })
+
+      player.on('play', () => {
+        this.$emit('play')
+      })
+
+      player.on('pause', () => {
+        this.$emit('pause')
+      })
+
+      player.on('canplay', () => {
+        this.$emit('canplay')
+      })
+
+      player.on('playing', () => {
+        this.$emit('playing')
+      })
+
+      player.on('ended', () => {
+        this.$emit('ended')
+      })
+
+      player.on('error', () => {
+        this.$emit('error')
       })
     }
   }
