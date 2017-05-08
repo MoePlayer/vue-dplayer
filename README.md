@@ -2,6 +2,10 @@
 
 > A Vue 2.x video player component based on [DPlayer](https://github.com/DIYgod/DPlayer).
 
+[![NPM version](https://img.shields.io/npm/v/vue-dplayer.svg?style=flat)](https://npmjs.com/package/vue-dplayer) 
+[![Vue 2.x](https://img.shields.io/badge/Vue-2.x-brightgreen.svg)](https://vuejs.org/v2/guide/)
+[![NPM downloads](https://img.shields.io/npm/dm/vue-dplayer.svg?style=flat)](https://npmjs.com/package/vue-dplayer) 
+
 [Live Demo](https://sinchang.github.io/vue-dplayer/)
 
 ## Install
