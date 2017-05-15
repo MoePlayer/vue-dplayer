@@ -90,3 +90,14 @@
     }
   }
 </script>
+
+<style>
+  .dplayer.dplayer-no-danmaku .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box {
+    height: auto;
+  }
+
+  .dplayer .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-showdan,
+  .dplayer .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku {
+    display: none;
+  }
+</style>

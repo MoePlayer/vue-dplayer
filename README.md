@@ -31,7 +31,7 @@ export default {
 | ---- | ---- | ------- | ----------- |
 | autoplay | Boolean | false | autoplay video, not supported by mobile browsers |
 | theme | String | #FADFA3 | theme color |
-| loop | Boolean | true | loop play music |
+| loop | Boolean | true | loop play video |
 | lang | String | zh | `zh` for Chinese, `en` for English |
 | screenshot | Boolean | false | enable screenshot function |
 | hotkey | Boolean | true | binding hot key, including left right and Space |

@@ -6,9 +6,9 @@ module.exports = {
   minimize: false,
   sourceMap: false,
   filename: {
-    js: 'Vue-DPlayer.js',
-    css: 'Vue-DPlayer.css'
+    js: 'Vue-DPlayer.js'
   },
+  extract: false,
   // this will not copy ./static/** to ./dist/**
   copy: false
 }

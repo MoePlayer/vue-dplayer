@@ -3,7 +3,7 @@
 module.exports = {
   entry: 'example/index.js',
   dist: 'dist-example',
-  homepage: '/vue-dplayer/',
+  homepage: '/',
   port: 5000,
   html: {
     title: 'Vue-DPlayer'

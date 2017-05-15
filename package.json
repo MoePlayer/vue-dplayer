@@ -1,7 +1,7 @@
 {
   "name": "vue-dplayer",
   "description": "A Vue 2.x video player component based on DPlayer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/Vue-DPlayer.js",
   "files": [
     "dist"
@@ -12,8 +12,7 @@
     "build": "npm run build:cjs && npm run build:umd",
     "build:cjs": "vbuild -c vbuild.component.js --format cjs",
     "build:umd": "vbuild -c vbuild.component.js --format umd",
-    "example": "vbuild -c vbuild.example.js -d",
-    "deploy": "vbuild -c vbuild.example.js && gh-pages -d dist-example"
+    "example": "vbuild -c vbuild.example.js -d"
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,6 @@
   ],
   "author": "sinchang <sinchangwen@gmail.com>",
   "devDependencies": {
-    "gh-pages": "^0.12.0",
     "vbuild": "^6.0.0"
   },
   "license": "MIT",
