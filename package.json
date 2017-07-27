@@ -1,14 +1,14 @@
 {
   "name": "vue-dplayer",
   "description": "A Vue 2.x video player component based on DPlayer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/Vue-DPlayer.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "echo lol",
-    "lint": "vbuild -c vbuild.example.js --eslint",
+    "build:example": "vbuild -c vbuild.example.js",
     "build": "npm run build:cjs && npm run build:umd",
     "build:cjs": "vbuild -c vbuild.component.js --format cjs",
     "build:umd": "vbuild -c vbuild.component.js --format umd",
@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "dplayer": "^1.1.4",
+    "dplayer": "^1.5.0",
     "vue-github-badge": "^1.0.0"
   }
 }

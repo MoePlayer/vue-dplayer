@@ -5,9 +5,12 @@
     <github-badge slug="sinchang/vue-dplayer" />
     <d-player :video="video"
               :autoplay="autoplay"
+              :contextmenu="contextmenu"
+              screenshot="true"
               @play="play"
               ref="player">
     </d-player>
+    <button class="btn btn-primary" @click="switchHandle">switch</button>
   </div>
 </template>
 
@@ -22,19 +25,28 @@
           url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
           pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg'
         },
-        autoplay: false
+        videoUrl: 'http://static.smartisanos.cn/common/video/video-jgpro.mp4',
+        autoplay: false,
+        player: null,
+        contextmenu: [
+            {
+                text: 'GitHub',
+                link: 'https://github.com/MoePlayer/vue-dplayer'
+            }
+        ]
       }
     },
     mounted() {
-      // const player = this.$refs.player.dp
-      // player.play()
-      // setTimeout(() => {
-      //   player.pause()
-      // }, 2000)
+      this.player = this.$refs.player.dp
     },
     methods: {
       play() {
         console.log('play callback')
+      },
+      switchHandle() {
+        this.player.switchVideo({
+          url: 'http://static.smartisanos.cn/common/video/video-jgpro.mp4'
+        })
       }
     },
     components: {

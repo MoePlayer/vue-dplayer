@@ -34,6 +34,12 @@
         type: String,
         default: 'auto'
       },
+      contextmenu: {
+        type: Array
+      },
+      logo: {
+        type: String
+      },
       video: {
         type: Object,
         required: true,
@@ -57,6 +63,8 @@
         screenshot: this.screenshot,
         hotkey: this.hotkey,
         preload: this.preload,
+        contextmenu: this.contextmenu,
+        logo: this.logo,
         video: {
           url: this.video.url,
           pic: this.video.pic,
@@ -90,14 +98,4 @@
     }
   }
 </script>
-
-<style>
-  .dplayer.dplayer-no-danmaku .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-box {
-    height: auto;
-  }
-
-  .dplayer .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-showdan,
-  .dplayer .dplayer-controller .dplayer-icons .dplayer-setting .dplayer-setting-danmaku {
-    display: none;
-  }
-</style>
+<style src="../node_modules/dplayer/dist/DPlayer.min.css"></style>
