@@ -36,6 +36,8 @@ export default {
 | screenshot | Boolean | false | enable screenshot function |
 | hotkey | Boolean | true | binding hot key, including left right and Space |
 | preload | String | 'auto' | the way to load video, can be 'none' 'metadata' or 'auto' |
+| logo | String | dplayer default | player logo, showing in top left corner |
+| contextmenu | Array | dplayer default | custom contextmenu |
 | video| Object | `required` | video.url -> video link is required, video.pic -> video poster |
 
 ## Events
