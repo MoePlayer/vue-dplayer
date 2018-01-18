@@ -3,10 +3,7 @@
     <h1>Vue-DPlayer</h1>
     <h2>A Vue 2.x component of <a href="https://github.com/DIYgod/DPlayer" target="_blank">DPlayer</a></h2>
     <github-badge slug="sinchang/vue-dplayer" />
-    <d-player :video="video"
-              :autoplay="autoplay"
-              :contextmenu="contextmenu"
-              screenshot="true"
+    <d-player :options="options"
               @play="play"
               ref="player">
     </d-player>
@@ -21,20 +18,21 @@
   export default {
     data() {
       return {
-        video: {
-          url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
-          pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg'
+        options: {
+          video: {
+            url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
+            pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg'
+          },
+          autoplay: false,
+          contextmenu: [
+              {
+                  text: 'GitHub',
+                  link: 'https://github.com/MoePlayer/vue-dplayer'
+              }
+          ]
         },
-        videoUrl: 'http://static.smartisanos.cn/common/video/video-jgpro.mp4',
-        autoplay: false,
         player: null,
-        contextmenu: [
-            {
-                text: 'GitHub',
-                link: 'https://github.com/MoePlayer/vue-dplayer'
-            }
-        ]
-      }
+        }
     },
     mounted() {
       this.player = this.$refs.player.dp

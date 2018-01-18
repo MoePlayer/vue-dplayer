@@ -26,30 +26,13 @@ export default {
 }
 ```
 ## Props
-
+[Options Doc](http://dplayer.js.org/docs/#/?id=options)
 | Name | Type | Default | Description |
 | ---- | ---- | ------- | ----------- |
-| autoplay | Boolean | false | autoplay video, not supported by mobile browsers |
-| theme | String | #FADFA3 | theme color |
-| loop | Boolean | true | loop play video |
-| lang | String | zh | `zh` for Chinese, `en` for English |
-| screenshot | Boolean | false | enable screenshot function |
-| hotkey | Boolean | true | binding hot key, including left right and Space |
-| preload | String | 'auto' | the way to load video, can be 'none' 'metadata' or 'auto' |
-| logo | String | dplayer default | player logo, showing in top left corner |
-| contextmenu | Array | dplayer default | custom contextmenu |
-| video| Object | `required` | video.url -> video link is required, video.pic -> video poster |
+| options | Object | -- | all player options |
 
 ## Events
-
-| Name | Params | Description |
-| ---- | ------ | ----------- |
-| play | none | Triggered when DPlayer start play |
-| pause | none | Triggered when DPlayer paused |
-| canplay | none | Triggered when enough data is available that DPlayer can play |
-| playing | none | Triggered periodically when DPlayer is playing |
-| ended | none | Triggered when DPlayer ended playing |
-| error | none | Triggered when an error occurs |
+[Event binding Doc](http://dplayer.js.org/docs/#/?id=event-binding)
 
 Example:
 
