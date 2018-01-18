@@ -27,6 +27,7 @@ export default {
 ```
 ## Props
 [Options Doc](http://dplayer.js.org/docs/#/?id=options)
+
 | Name | Type | Default | Description |
 | ---- | ---- | ------- | ----------- |
 | options | Object | -- | all player options |
