@@ -1,7 +1,7 @@
 {
   "name": "vue-dplayer",
   "description": "A Vue 2.x video player component based on DPlayer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/Vue-DPlayer.js",
   "files": [
     "dist"
