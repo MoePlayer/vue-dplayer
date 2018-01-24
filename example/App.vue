@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import VueDPlayer from '../src/VueDPlayer.vue'
+  import VueDPlayer from '../dist/vue-dplayer'
   import GitHubBadge from 'vue-github-badge'
 
   export default {

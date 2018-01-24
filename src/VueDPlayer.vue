@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import DPlayer from 'DPlayer'
+  import DPlayer from 'dplayer'
   export default {
     props: {
       options: {
@@ -17,7 +17,7 @@
     },
     mounted() {
       this.options.container = this.$el
-      
+
       const player = this.dp = new DPlayer(this.options)
       const events = player.events
 
