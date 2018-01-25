@@ -3,4 +3,4 @@ node_modules
 .DS_Store
 
 # produced by vbuild
-dist-example
+example-dist

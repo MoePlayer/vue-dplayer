@@ -1,7 +1,7 @@
 {
   "name": "vue-dplayer",
   "description": "A Vue 2.x video player component based on DPlayer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/vue-dplayer.js",
   "files": [
     "dist"
@@ -30,9 +30,8 @@
   },
   "author": "sinchang <sinchangwen@gmail.com>",
   "devDependencies": {
-    "bili": "1.6.5",
-    "poi": "9.6.13",
-    "rollup-plugin-postcss": "1.2.7"
+    "bili": "2.0.0",
+    "poi": "9.6.13"
   },
   "license": "MIT",
   "dependencies": {
