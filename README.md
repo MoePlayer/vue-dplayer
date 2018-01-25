@@ -18,6 +18,7 @@ npm install vue-dplayer -S
 
 ```js
 import VueDPlayer from 'vue-dplayer'
+import '../node_modules/vue-dplayer/vue-dplayer.css'
 
 export default {
   components: {
