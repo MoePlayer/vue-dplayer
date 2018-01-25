@@ -12,7 +12,6 @@
 </template>
 
 <script>
-  import VueDPlayer from '../dist/vue-dplayer'
   import GitHubBadge from 'vue-github-badge'
 
   export default {
@@ -48,7 +47,6 @@
       }
     },
     components: {
-      'd-player': VueDPlayer,
       'github-badge': GitHubBadge
     }
   }

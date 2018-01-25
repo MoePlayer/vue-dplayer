@@ -6,7 +6,7 @@
 [![Vue 2.x](https://img.shields.io/badge/Vue-2.x-brightgreen.svg)](https://vuejs.org/v2/guide/)
 [![NPM downloads](https://img.shields.io/npm/dm/vue-dplayer.svg?style=flat)](https://npmjs.com/package/vue-dplayer) 
 
-[Live Demo](http://dplayer.surge.sh/)
+[Live Demo](https://dplayer.netlify.com/)
 
 ## Install
 

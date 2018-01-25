@@ -1,16 +1,17 @@
 {
   "name": "vue-dplayer",
   "description": "A Vue 2.x video player component based on DPlayer",
-  "version": "0.0.5",
-  "main": "dist/Vue-DPlayer.js",
+  "version": "0.0.6",
+  "main": "dist/vue-dplayer.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "echo lol",
     "build:example": "poi build example/index.js",
-    "build": "bili src/VueDPlayer.vue",
-    "example": "poi example/index.js"
+    "build": "bili",
+    "example": "poi example/index.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,15 +25,18 @@
     "component",
     "player"
   ],
+  "poi": {
+    "dist": "example-dist"
+  },
   "author": "sinchang <sinchangwen@gmail.com>",
   "devDependencies": {
     "bili": "1.6.5",
     "poi": "9.6.13",
-    "rollup-plugin-vue": "3.0.0"
+    "rollup-plugin-postcss": "1.2.7"
   },
   "license": "MIT",
   "dependencies": {
     "dplayer": "^1.20.0",
-    "vue-github-badge": "^1.0.0"
+    "vue-github-badge": "1.0.1"
   }
 }
