@@ -5,7 +5,7 @@
  */
 import DPlayer from 'dplayer';
 
-var index = {
+var VueDPlayer = {
   props: {
     options: {
       type: Object
@@ -45,4 +45,8 @@ var index = {
   }
 };
 
-export default index;
+if (typeof window !== 'undefined' && window.Vue) {
+  window.VueDPlayer = VueDPlayer;
+}
+
+export default VueDPlayer;

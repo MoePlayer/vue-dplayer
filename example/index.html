@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo</title>
+  <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+  <script src="../dist/vue-dplayer.js"></script>
+  <link rel="stylesheet" href="../dist/vue-dplayer.css">
+</head>
+
+<body>
+  <div id="app">
+    <d-player :options="options"></d-player>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      components: {
+        'd-player': VueDPlayer
+      },
+      data: {
+        options: {
+          video: {
+            url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
+            pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg'
+          },
+          autoplay: false,
+          contextmenu: [{
+            text: 'GitHub',
+            link: 'https://github.com/MoePlayer/vue-dplayer'
+          }]
+        },
+      }
+    })
+
+  </script>
+</body>
+
+</html>
+

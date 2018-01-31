@@ -9,7 +9,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var DPlayer = _interopDefault(require('dplayer'));
 
-var index = {
+var VueDPlayer = {
   props: {
     options: {
       type: Object
@@ -49,4 +49,8 @@ var index = {
   }
 };
 
-module.exports = index;
+if (typeof window !== 'undefined' && window.Vue) {
+  window.VueDPlayer = VueDPlayer;
+}
+
+module.exports = VueDPlayer;

@@ -1,7 +1,7 @@
 import DPlayer from 'dplayer'
 import '../node_modules/dplayer/dist/DPlayer.min.css'
 
-export default {
+const VueDPlayer = {
   props: {
     options: {
       type: Object
@@ -35,3 +35,9 @@ export default {
     }, [])
   }
 }
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.VueDPlayer = VueDPlayer
+}
+
+export default VueDPlayer

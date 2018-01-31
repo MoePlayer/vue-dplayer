@@ -29,7 +29,7 @@ var DPlayer_min = createCommonjsModule(function (module, exports) {
 var DPlayer = unwrapExports(DPlayer_min);
 var DPlayer_min_1 = DPlayer_min.DPlayer;
 
-var index = {
+var VueDPlayer = {
   props: {
     options: {
       type: Object
@@ -69,6 +69,10 @@ var index = {
   }
 };
 
-return index;
+if (typeof window !== 'undefined' && window.Vue) {
+  window.VueDPlayer = VueDPlayer;
+}
+
+return VueDPlayer;
 
 })));
