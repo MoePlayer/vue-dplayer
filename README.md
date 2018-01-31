@@ -16,6 +16,8 @@ npm install vue-dplayer -S
 
 ## Usage
 
+CDN: https://unpkg.com/vue-dplayer@latest/dist/
+
 ```js
 import VueDPlayer from 'vue-dplayer'
 import '../node_modules/vue-dplayer/vue-dplayer.css'
@@ -26,6 +28,7 @@ export default {
   }
 }
 ```
+
 ## Props
 [Options Doc](http://dplayer.js.org/docs/#/?id=options)
 
