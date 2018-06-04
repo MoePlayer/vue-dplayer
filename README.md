@@ -20,7 +20,7 @@ CDN: https://unpkg.com/vue-dplayer@latest/dist/
 
 ```js
 import VueDPlayer from 'vue-dplayer'
-import 'vue-dplayer/vue-dplayer.css'
+import 'vue-dplayer/dist/vue-dplayer.css'
 
 export default {
   components: {
