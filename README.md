@@ -30,14 +30,14 @@ export default {
 ```
 
 ## Props
-[Options Doc](http://dplayer.js.org/docs/#/?id=options)
+[Options Doc](http://dplayer.js.org/#/home?id=options)
 
 | Name | Type | Default | Description |
 | ---- | ---- | ------- | ----------- |
 | options | Object | -- | all player options |
 
 ## Events
-[Event binding Doc](http://dplayer.js.org/docs/#/?id=event-binding)
+[Event binding Doc](http://dplayer.js.org/#/home?id=event-binding)
 
 Example:
 
@@ -54,7 +54,7 @@ export default {
 
 ## API
 
-you can use all DPlayer [APIs](http://dplayer.js.org/docs/#/?id=api)
+you can use all DPlayer [APIs](http://dplayer.js.org/#/home?id=api)
 
 Example:
 
